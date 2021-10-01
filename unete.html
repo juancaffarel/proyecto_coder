@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unete Grid</title>
+    <link rel="stylesheet" href="./normalize.css" />
+    <link rel="stylesheet" href="./proyectocoder.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
+</head>
+<body>
+    <div id="grilla">
+        <header class="header_pagina">
+            <div class="imagen_principal">
+                <img class="imagen_principal_escudo" src="imagenes/logo.png" alt="Logo">
+            </div>
+            <div class="titulo_principal">
+                <h1 class="titulo_principal_escrito">Major League Soccer</h1>
+                </div>
+                <div class="barra_navegacion">
+                    <nav class="barra_navegacion">
+                        <ul class="barra_navegacion_lista">
+                <li class="barra_navegacion_lista_titulo"><a href="./index.html">Inicio</a></li>
+                <li class="barra_navegacion_lista_titulo"><a href="./historia.html">Historia</a></li>
+                <li class="barra_navegacion_lista_titulo"><a href="./campeones.html">Campeones</a></li>
+                <li class="barra_navegacion_lista_titulo"><a href="./leyendas.html">Leyendas</a></li>
+                <li class="barra_navegacion_lista_titulo"><a href="./unete.html">Unete</a></li>
+                        </ul>
+                    </nav>
+                </div>
+        </header>
+        <main class="main_unete">
+            <div>
+        <form class="main_unete_formulario">
+            <label for="nombre_apellido">Nombre</label><br>
+            <input type="text" name="nombre_apellido"><br>
+            <label for="mail_usuario">E-Mail</label><br>
+            <input type="email" name="mail_usuario"><br>
+            <label for="newsletter">Desea recibir newsletter</label>
+            <div>Sí</div>
+            <input type="radio" name="newsletter" value="Sí">
+            <div>No</div>
+            <input type="radio" name=newsletter value="No"><br>
+            <label for="Club">Club</label>
+            <select name="Club"><br>
+                <option value="Elija su club">Elija su club</option>
+                <option value="Portland Timbers">Portland Timbers</option>
+                <option value="Orlando City">Orlando City</option>
+                <option value="Dallas FC">Dallas FC</option>
+            </select><br><br>
+            <div class="unete_terminos_condiciones">He leído y acepto los términos y condiciones</div>
+            <input type="checkbox" name="acepta" value="1"><br><br>
+            <input type="reset" value="Limpiar formulario">
+            <input type="submit" value="Enviar formulario">
+        </form>
+            </div>
+            <div>
+            <video class="unete_video" src="./videos/videomls.mp4" controls>Tu navegador no implementa el video <code>Video</code>></video>
+            </div>
+        </main>
+        <footer class="footer_unete">
+            <div class="logos_redes">
+            <img class="logo_redes_sociales" src="./imagenes/logos/facebook.svg" class="redesSociales">
+            <img class="logo_redes_sociales" src="./imagenes/logos/instagram.svg" class="redesSociales">
+            <img class="logo_redes_sociales" src="./imagenes/logos/twitter.svg" class="redesSociales">
+            <img class="logo_redes_sociales" src="./imagenes/logos/youtube.svg" class="redesSociales">
+            <h4 class="frase_derechos_reservados">Derechos reservados MLS®</h4>
+        </div>
+        </footer>
+   </div>
+   <script src="js/wow.min.js"></script>
+<script>
+   new WOW().init();
+</script>
+</body>
+</html>

@@ -1,0 +1,241 @@
+.header_pagina {
+    background: white;
+}
+
+.imagen_principal {
+    background-image: linear-gradient(to left,blue,red,white);
+}
+
+.titulo_principal {
+    color: white;
+    background-color: red;
+    padding: 1px;
+}
+
+.barra_navegacion_lista {
+       list-style-type: none;
+       position: relative;
+}
+
+.barra_navegacion_lista {
+    color: white;
+    background-color: red;
+}
+
+.barra_navegacion_lista_titulo:hover {
+    font-family: sans-serif;
+    background-color: white;
+    color: red;
+
+}
+
+.barra_navegacion_lista_titulo-historia{
+    font-family: sans-serif;
+    background-color: white;
+    color: red;
+}
+
+.barra_navegacion_lista_titulo-leyenda{
+    font-family: sans-serif;
+    background-color: white;
+    color: red;
+}
+
+.main_inicio_galeria {
+    background-image: url(https://scontent.faep9-1.fna.fbcdn.net/v/t1.6435-9/162355808_10159087099948887_2709077103982262146_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=973b4a&_nc_ohc=EgZS1eIlSwwAX8feztV&_nc_ht=scontent.faep9-1.fna&oh=7c6e63d4c85fe5d2f6e6925589436dff&oe=61608084);
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_inicio_galeria_escudo {
+    width: 6.5rem;
+    height: 6.5rem;
+    transition: 1s;
+}
+
+.main_inicio_galeria_escudo:hover{
+    height: 10rem; width: 10rem;
+}
+
+.portada_imagen {
+    width: 100%;
+}
+
+.logo_redes_sociales {
+    width: 2rem;
+    height: 2rem;
+}
+
+.main_historia_titulo_escrito {
+    color: red;
+}
+
+.main_section_historia_parrafo {
+    background-color: red;
+    color: black;
+    font-family: sans-serif;
+}
+
+.main_campeones_lista {
+    border: solid 2px;
+    padding: none;
+}
+
+.main_campeones_lista_tabla_fila-uno {
+    background-color: blue;
+    color: white;
+}
+
+.main_campeones_lista_tabla_fila-tres{
+    background-color: red;
+    color: white;
+}
+
+.main_campeones_lista_tabla_fila-cinco {
+    background-color: red;
+    color: white
+    ;
+}
+
+.main_leyendas_galeria_lista {
+    background-color: white;
+    padding: 0;
+}
+
+.grilla_campeones {
+    display: grid;  
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+    margin: 1em;
+    justify-content: center;
+    align-items: center;
+    justify-items: stretch;
+    align-items: center;
+    justify-self: center;
+}
+
+.grilla_campeones_primera_fila {
+    background-color: blue;
+    color: white;
+    font-size: 2rem;
+}
+
+.grilla_campeones_segunda_fila{
+    color: red;
+    font-size: 1rem;
+}
+
+.grilla_campeones_tercera_fila {
+    background-color: red;
+    color: white;
+    font-size: 1rem;
+}
+
+.grilla_campeones_cuarta_fila{
+    color: red;
+    font-size: 1rem;
+}
+
+.grilla_campeones_quinta_fila {
+    background-color: blue;
+    color: white;
+    font-size: 1rem;
+}
+
+.escudo_grilla {
+    width: 4rem;
+    height: 4rem;
+}
+
+.galeria-jugador-imagen {
+    width: 15rem;
+    height: 15rem;
+    padding: 1rem;
+}
+
+.leyendas_galeria_jugador {
+    color:black;
+    font-size: 2rem;
+}
+
+.galeria_jugador_parrafo{
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+
+
+.grid_leyenda {
+    display: grid;
+    grid-template-columns: 30%,auto;
+    grid-template-rows: 20%,auto;
+    grid-template-areas:
+    "h3 h3"
+    "img p";
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+h3 {
+    grid-area: h3;
+}
+
+img {
+    grid-area: img;
+}
+
+p {
+    grid-area: p;
+}
+
+.leyendas_galeria_lista_item-uno{
+    background-color: red;
+}
+
+.leyendas_galeria_lista_item-dos{
+    background-color: white;
+}
+
+.leyendas_galeria_lista_item-tres{
+    background-color: red;
+}
+
+.logos_redes-leyendas{
+    background-color: red;
+}
+
+.logos_redes {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    padding: 1em;
+    background-image: linear-gradient(to right,blue,red,white);
+}
+
+.unete_terminos_condiciones{
+    background-color: red;
+}
+
+.unete_video{
+    height: 400px;
+    width: 500px;
+    background-color: red;
+}
+
+.main_unete {
+    display: grid;
+    grid-template-columns: 50%;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "form video";
+    justify-content: stretch;
+}
+
+form {
+    grid-area: form;
+}
+
+video {
+    grid-area: video;
+}
