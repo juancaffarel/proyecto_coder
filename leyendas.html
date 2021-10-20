@@ -5,14 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leyendas</title>
+    <meta name="description" content="Conoce en nuestra página, las diferentes leyendas que han pasado por nuestra tierra">
+    <meta name="keywords"  content="MLS, Liga Estadounidense, Futbol, Pele MLS, Beckham MLS, Henry MLS, Pirlo MLS">
     <link rel="stylesheet" href="./normalize.css" />
-    <link rel="stylesheet" href="./proyectocoder.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
 </head>
-<body>
+<body class="body_leyendas">
     <header class="header_pagina">
         <div class="imagen_principal">
             <img class="imagen_principal_escudo" src="imagenes/logo.png" alt="Logo">
@@ -20,56 +23,65 @@
         <div class="titulo_principal">
             <h1 class="titulo_principal_escrito">Major League Soccer</h1>
             </div>
-            <div class="barra_navegacion">
-                <nav class="barra_navegacion">
-                    <ul class="barra_navegacion_lista">
-            <li class="barra_navegacion_lista_titulo"><a href="./index.html">Inicio</a></li>
-            <li class="barra_navegacion_lista_titulo"><a href="./historia.html">Historia</a></li>
-            <li class="barra_navegacion_lista_titulo"><a href="./campeones.html">Campeones</a></li>
-            <li class="barra_navegacion_lista_titulo"><a href="./leyendas.html">Leyendas</a></li>
-            <li class="barra_navegacion_lista_titulo"><a href="./unete.html">Unete</a></li>
-                    </ul>
-                </nav>
-            </div>
+            <div class="container">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./historia.html">Historia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./campeones.html">Campeones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./leyendas.html">Leyendas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./unete.html">Unete</a>
+                    </li>
+                </div>
     </header>
     <main class="main_leyendas">
     <div class="main_leyendas_titulo">
     <h1 class="main_leyendas_titulo_escrito">Leyendas en la MLS</h1>
     </div>
-    <div class="main_leyendas_galeria">
-    <ul class="main_leyendas_galeria_lista">
-        <li class="leyendas_galeria_lista_item-uno">
-            <div class=grid_leyenda>
-            <h3 class="leyendas_galeria_jugador">Pele</h3>
-        <img class="galeria-jugador-imagen"src="./imagenes/jugadores/pele.jpg" alt="Pele" class="jugadoresLeyenda">
-            <p class="galeria_jugador_parrafo">Uno de los acontecimientos históricos en el fútbol estadounidense se dio en 1975, cuando Edson Arantes do Nascimiento, mejor conocido como Pelé, hizo su arribo al New York Cosmos de la entonces naciente National American Soccer League, que concretó la llegada del que para muchos, es el mejor futbolista de la historia.</p>
-    </div>
-    </li>
-        <li class="leyendas_galeria_lista_item-dos">
-            <div class=grid_leyenda>
-            <h3 class="leyendas_galeria_jugador">David Beckham</h3>
-            <img class="galeria-jugador-imagen" src="./imagenes/jugadores/beckham.jpg" alt="David Beckham" class="jugadoresLeyenda">
-            <p class="galeria_jugador_parrafo">
-                El 1 de julio de 2007, en medio de gran controversia, Beckham deja el Real Madrid y ficha por el equipo estadounidense de Los Angeles Galaxy bajo la figura de jugador franquicia en la MLS. Se cree que esta decisión responde a fines más lucrativos que estrictamente deportivos, ya que Beckham sería consciente de su futuro declive físico y desearía exprimir al máximo su potencial publicitario en el mercado de los Estados Unidos.
-            </p>
+    <div class="container">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Pele</h5>
+          <p class="card-text">Uno de los acontecimientos históricos en el fútbol estadounidense se dio en 1975, cuando Edson Arantes do Nascimiento, mejor conocido como Pelé, hizo su arribo al New York Cosmos de la entonces naciente National American Soccer League, que concretó la llegada del que para muchos, es el mejor futbolista de la historia.</p>
         </div>
-        </li>
-        <li class="leyendas_galeria_lista_item-tres">
-            <div class=grid_leyenda>
-            <h3 class="leyendas_galeria_jugador">Andrea Pirlo</h3>
-            <img class="galeria-jugador-imagen" src="./imagenes/jugadores/pirlo.jfif" alt="Andrea Pirlo" class="jugadoresLeyenda">
-            <p class="galeria_jugador_parrafo">El 6 de julio de 2015, luego de quedar libre, Pirlo fichó por el New York City F. C. de Estados Unidos y se convirtió en el tercer jugador franquicia, junto con David Villa y Frank Lampard. Cobró ocho millones de dólares por temporada, por lo cual fue el futbolista mejor pagado de la Major League Soccer.</p>
+        <img src="./imagenes/jugadores/pele.jpg" class="card-img-bottom" alt="Pele">
+      </div>
+      </div>
+      <div class="container">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">David Beckham</h5>
+            <p class="card-text">El 1 de julio de 2007, en medio de gran controversia, Beckham deja el Real Madrid y ficha por el equipo estadounidense de Los Angeles Galaxy bajo la figura de jugador franquicia en la MLS. Se cree que esta decisión responde a fines más lucrativos que estrictamente deportivos, ya que Beckham sería consciente de su futuro declive físico y desearía exprimir al máximo su potencial publicitario en el mercado de los Estados Unidos.</p>
+          </div>
+          <img src="./imagenes/jugadores/beckham.jpg" class="card-img-bottom" alt="David Beckham">
         </div>
-        </li>
-        <li class="leyendas_galeria_lista_item-cuatro">
-            <div class=grid_leyenda>
-            <h3 class="leyendas_galeria_jugador">Thierry Henry</h3>
-            <img class="galeria-jugador-imagen" src="./imagenes/jugadores/henry.jpg" alt="Thierry Henry" class="jugadoresLeyenda">
-            <p class="galeria_jugador_parrafo">El 14 de julio de 2010 fue contratado por los New York Red Bulls de la MLS de Estados Unidos por cuatro años,​ junto a su compañero del Barcelona Rafa Márquez. Tití se convirtió en el jugador mejor pagado de la MLS (5,6 millones US$). En los Red Bulls, consigue unos 14 goles en la primera temporada, demostrando un compromiso absoluto con el club y liga, ayudándola a crecer con su aporte social y económico.</p>
         </div>
-        </li>
-    </ul>
-    </div>
+        <div class="container">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Thierry Henry</h5>
+                <p class="card-text">El 14 de julio de 2010 fue contratado por los New York Red Bulls de la MLS de Estados Unidos por cuatro años,​ junto a su compañero del Barcelona Rafa Márquez. Tití se convirtió en el jugador mejor pagado de la MLS (5,6 millones US$). En los Red Bulls, consigue unos 14 goles en la primera temporada, demostrando un compromiso absoluto con el club y liga, ayudándola a crecer con su aporte social y económico.</p>
+              </div>
+              <img src="./imagenes/jugadores/henry.jpg" class="card-img-bottom"  alt="Thierry Henry">
+            </div>
+            </div>
+            <div class="container">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Andrea Pirlo</h5>
+                    <p class="card-text">El 6 de julio de 2015, luego de quedar libre, Pirlo fichó por el New York City F. C. de Estados Unidos y se convirtió en el tercer jugador franquicia, junto con David Villa y Frank Lampard. Cobró ocho millones de dólares por temporada, por lo cual fue el futbolista mejor pagado de la Major League Soccer.</p>
+                  </div>
+                  <img src="./imagenes/jugadores/pirlo.png" class="card-img-bottom"  alt="Andrea Pirlo">
+                </div>
+                </div>
 </main>
 <footer>
     <div class="logos_redes">
@@ -84,5 +96,6 @@
 <script>
    new WOW().init();
 </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
 </body>
 </html>

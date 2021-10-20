@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unete Grid</title>
+    <title>Unete a la MLS</title>
+    <meta name="description" content="Unete a la MLS, la liga con mayor crecimiento a nivel americano">
+    <meta name="keywords"  content="MLS, Liga Estadounidense, Futbol, Unete">
     <link rel="stylesheet" href="./normalize.css" />
-    <link rel="stylesheet" href="./proyectocoder.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
 </head>
 <body>
     <div id="grilla">
@@ -21,20 +24,28 @@
             <div class="titulo_principal">
                 <h1 class="titulo_principal_escrito">Major League Soccer</h1>
                 </div>
-                <div class="barra_navegacion">
-                    <nav class="barra_navegacion">
-                        <ul class="barra_navegacion_lista">
-                <li class="barra_navegacion_lista_titulo"><a href="./index.html">Inicio</a></li>
-                <li class="barra_navegacion_lista_titulo"><a href="./historia.html">Historia</a></li>
-                <li class="barra_navegacion_lista_titulo"><a href="./campeones.html">Campeones</a></li>
-                <li class="barra_navegacion_lista_titulo"><a href="./leyendas.html">Leyendas</a></li>
-                <li class="barra_navegacion_lista_titulo"><a href="./unete.html">Unete</a></li>
-                        </ul>
-                    </nav>
-                </div>
+                <div class="container">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./historia.html">Historia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./campeones.html">Campeones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./leyendas.html">Leyendas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./unete.html">Unete</a>
+                        </li>
+                    </div>
         </header>
         <main class="main_unete">
             <div>
+        <!--
         <form class="main_unete_formulario">
             <label for="nombre_apellido">Nombre</label><br>
             <input type="text" name="nombre_apellido"><br>
@@ -57,6 +68,51 @@
             <input type="reset" value="Limpiar formulario">
             <input type="submit" value="Enviar formulario">
         </form>
+    -->
+    <form class="row g-3">
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Email</label>
+          <input type="email" class="form-control" id="inputEmail4">
+        </div>
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label">Contraseña</label>
+          <input type="password" class="form-control" id="inputPassword4">
+        </div>
+        <div class="col-12">
+          <label for="inputAddress" class="form-label">Dirección</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="Calle falsa 123">
+        </div>
+        <div class="col-md-6">
+          <label for="inputCity" class="form-label">Ciudad</label>
+          <input type="text" class="form-control" id="inputCity">
+        </div>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">Club</label>
+          <select id="inputState" class="form-select">
+            <option selected>Elija su club</option>
+            <option value="Portland Timbers">Portland Timbers</option>
+            <option value="Orlando City">Orlando City</option>
+            <option value="Dallas FC">Dallas FC</option>
+          </select>
+        </div>
+        <div class="col-6">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Hombre
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Mujer
+            </label>
+          </div>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Entrar</button>
+        </div>
+      </form>
             </div>
             <div>
             <video class="unete_video" src="./videos/videomls.mp4" controls>Tu navegador no implementa el video <code>Video</code>></video>
@@ -76,5 +132,6 @@
 <script>
    new WOW().init();
 </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
 </body>
 </html>

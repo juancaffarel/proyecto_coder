@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MLS</title>
+    <title>MLS - Inicio</title>
+    <meta name="description" content="Conoce en nuestra página, el mundo de la MLS, la liga estadounidense que cada día se vuelve más importante">
+    <meta name="keywords"  content="MLS, Liga Estadounidense, Futbol, Norteamerica">
     <link rel="stylesheet" href="./normalize.css" />
-    <link rel="stylesheet" href="./proyectocoder.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
 </head>
-<body>
+<body class="body_index">
     <header class="header_pagina">
         <div class="imagen_principal">
             <img class="imagen_principal_escudo" src="imagenes/logo.png" alt="Logo">
@@ -20,6 +23,26 @@
         <div class="titulo_principal">
         <h1 class="titulo_principal_escrito">Major League Soccer</h1>
         </div>
+        <div class="container">
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./historia.html">Historia</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./campeones.html">Campeones</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./leyendas.html">Leyendas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./unete.html">Unete</a>
+            </li>
+        </div>
+  <!--
+          </ul>
             <div class="barra_navegacion">
                 <nav class="barra_navegacion">
                     <ul class="barra_navegacion_lista">
@@ -31,20 +54,63 @@
                     </ul>
                 </nav>
             </div>
+        -->
     </header>
     <main class="main_inicio">
-    <div class="main_inicio_galeria">
-        <img class="main_inicio_galeria_escudo" src="./imagenes/escudos/intermiami.png">
-        <img class="main_inicio_galeria_escudo" src="./imagenes/escudos/lafc.png">
-        <img class="main_inicio_galeria_escudo" src="./imagenes/escudos/colorado.png">
-        <img class="main_inicio_galeria_escudo" src="./imagenes/escudos/chicagofire.png">
-        <img class="main_inicio_galeria_escudo" src="./imagenes/escudos/columbus.png" >
-        <img class="main_inicio_galeria_escudo" src="./imagenes/escudos/dcunited.png">
-        <img class="main_inicio_galeria_escudo" src="./imagenes/escudos/orlandocity.png">
-        <img class="main_inicio_galeria_escudo" src="./imagenes/escudos/newyork.png">
-    </div>
-    <div class="portada">
-        <img class="portada_imagen" src="./imagenes/portada.png" alt="Portada" class="portada">
+        <div class="container">
+            <div class="row">
+              <div class="col">
+                <img class="main_inicio_galeria_escudo" src="./imagenes/escudos/intermiami.png">
+              </div>
+              <div class="col">
+                <img class="main_inicio_galeria_escudo" src="./imagenes/escudos/lafc.png">
+              </div>
+              <div class="col">
+                <img class="main_inicio_galeria_escudo" src="./imagenes/escudos/colorado.png">
+              </div>
+              <div class="col">
+                <img class="main_inicio_galeria_escudo" src="./imagenes/escudos/chicagofire.png">
+            </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+            <div class="col">
+                <img class="main_inicio_galeria_escudo" src="./imagenes/escudos/columbus.png" >
+            </div>
+              <div class="col">
+                <img class="main_inicio_galeria_escudo" src="./imagenes/escudos/dcunited.png">
+            </div>
+              <div class="col">
+                <img class="main_inicio_galeria_escudo" src="./imagenes/escudos/orlandocity.png">
+            </div>
+              <div class="col">
+                <img class="main_inicio_galeria_escudo" src="./imagenes/escudos/newyork.png">
+            </div>
+            </div>
+          </div>
+    <div class="container">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./imagenes/portada.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./imagenes/portadab.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./imagenes/portadac.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
     </div>
     </main>
     <footer>
@@ -56,5 +122,6 @@
         <h4 class="frase_derechos_reservados">Derechos reservados MLS®</h4>
     </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
 </body>
 </html>

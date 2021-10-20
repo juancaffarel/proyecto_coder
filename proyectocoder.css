@@ -1,3 +1,12 @@
+.body_index {
+        background-image: linear-gradient(to right,blue,red,white);
+    }
+
+    .body_leyendas {
+        background-image: linear-gradient(to right,blue,red,white);
+    }
+
+
 .header_pagina {
     background: white;
 }
@@ -42,9 +51,8 @@
 }
 
 .main_inicio_galeria {
-    background-image: url(https://scontent.faep9-1.fna.fbcdn.net/v/t1.6435-9/162355808_10159087099948887_2709077103982262146_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=973b4a&_nc_ohc=EgZS1eIlSwwAX8feztV&_nc_ht=scontent.faep9-1.fna&oh=7c6e63d4c85fe5d2f6e6925589436dff&oe=61608084);
-    display: flex;
-    justify-content: space-between;
+    background-image: url(https://scontent.faep9-1.fna.fbcdn.net/v/t1.6435-9/162355808_10159087099948887_2709077103982262146_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=e3f864&_nc_eui2=AeH47lP_G0JebHTzrJZvjbdkJ_UNiPLSAMQn9Q2I8tIAxA0tOnXqRrFnYt3r7pY0gm8&_nc_ohc=PgQi1uuL0vIAX990M7e&tn=RwVzKyB7FJXk9laU&_nc_ht=scontent.faep9-1.fna&oh=8a1ef0d62dfd3852d42930c786df6932&oe=61880D84);
+
 }
 
 .main_inicio_galeria_escudo {
